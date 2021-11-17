@@ -1,0 +1,131 @@
+<!DOCTYPE html >
+<html>
+    <head>
+        <title>Page de formulaire</title>
+        <meta charset="UTF-8"> 
+        <link rel="stylesheet" type="text/css" href="../assets/css/style.css"> 
+    </head>
+    <body>
+        <h1 class="exo1">Informations de 1ere connexion</h1> 
+        <form action="http://gigondas/~merciera/testFrm.php" method="POST">
+            <fieldset>
+                <h2>Saisissez le contenu du Form suivant</h2>
+
+                <h2>Nom</h2> 
+                <input type="text" name="nom" placeholder="Dupont">
+
+                <h2>Mot de Passe</h2>
+                <input type="password" name="mdp" placeholder="motdepasse"> <!--input de type mdp-->
+
+                <h2>Date</h2>
+                <input type="date" name="date"> <!--input de type date-->
+                <br>
+                <input type="reset" name="raz">
+                <input type="submit" name="valider">
+
+                <a  class="webmaster" href="mailto:l.deroin@netcourrier.com"><h2 class="contact">Envoyez au WebMaster</h2></a>
+            </fieldset>
+        </form>
+   
+        <h1 class="exo2">Informations de connexion</h1>
+        <form action="http://gigondas/~merciera/testFrm.php">
+            <fieldset>
+                <h2>Genre</h2>
+                <select name="genre">
+                    <option value="monsieur">Monsieur</option>
+                    <option value="madame">Madame</option>
+                    <option value="other">Autre</option>
+                </select>
+                <h2>Mode de trasnport</h2>
+                <input type="checkbox">velo
+                <input type="checkbox">A pied
+                <input type="checkbox">montgolfiere
+                <input type="checkbox">autres
+
+                <h2>Age</h2>
+                <input type="radio" name="a">Jeunes
+                <input type="radio" name="a">Actif
+                <input type="radio" name="a">Sénior
+                <input type="submit">
+            </fieldset>
+        </form>
+
+        <h1 class="exo3">Utilisation d'une dataliste</h1>
+        <form action="http://gigondas/~merciera/testFrm.php">
+            <fieldset>
+                <label for="choix_transport">Indiquez votre mode de transport :</label>
+                <input list="transport" type="text" placeholder="voiture">
+                <datalist id="transport">
+                    <option value="vélo">
+                    <option value="a pied">
+                    <option value="montgolfiere">
+                    <option value="autres">
+                </datalist>
+
+                <h2>Age</h2>
+                <input type="range" name="age" min="0" max="100" step="1" value="100" oninput="result4.value=parseInt(age.value)"/>
+                <output class="output" name="result4">--</output>
+
+                <h2>Liste des liens :</h2>
+                <input list="link" type="text" placeholder="https://www.google.fr/">
+                <datalist id="link"> <!--implémenter une dataliste-->
+                    <option value="https://www.iut-valence.fr">
+                    <option value="https://www.univ-grenoble-alpes.fr">
+                    <option value="http://www.aduda.fr">
+                </datalist>           
+                <input type="submit">
+            </fieldset>
+        </form>
+
+        
+        <h1 class="exo5">Formulaire Complet</h1>
+        <form action="http://gigondas/~merciera/testFrm.php"> 
+            <fieldset>
+                <h2>Genre</h2>
+                <select name="genre"> <!--type selection-->
+                    <option value="monsieur">Monsieur</option>
+                    <option value="madame">Madame</option>
+                    <option value="other">Autre</option>
+                </select>
+
+                <h2>Nom</h2>
+                <input type="text" name="nom" placeholder="Dupont">
+
+                <h2>Age</h2>
+                <input type="radio" name="btage">-18ans <!--input de type radio-->
+                <input type="radio" name="btage">18-25 ans
+                <input type="radio" name="btage">25-40 ans
+                <input type="radio" name="btage">40-60 ans
+                <input type="radio" name="btage">+60 ans
+
+                <h2>Année de Naissance</h2>
+                <input type="text" name="age" placeholder="1999">
+
+                <h2>Nombre</h2>
+                <input type="text" name="nbre" hidden> <!--code caché --> <!--input de type checkbox-->
+                <input type="checkbox" name="equipe1">Evos <!--Equipe de Mobile Legend-->
+                <input type="checkbox" name="equipe2">RRQ
+                <input type="checkbox" name="equipe3">AlterEgo
+                <input type="checkbox" name="equipe4">Brenn
+                <input type="checkbox" name="equipe5">ONIC
+
+                <h2>Votre adresse mail</h2>
+                <input type="email" name="mail" placeholder="exemple@exemple.com">
+
+                <p>Votre niveau d'expertise en web</p>
+                <input type="range" name="expert" min="0" max="100" step="1" value="100" oninput="webResult.value=parseInt(expert.value)"/> <!-- implémenter un curseur-->
+                <output class="output" name="webResult">--</output>
+
+                <h2>Votre couleur préférée</h2>
+                <input type="color" name="couleur"> <!--input de type couleur-->
+                <h2>Votre numéro de téléphone</h2>
+                <input type="text" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" placeholder="Ex: 06 88 85 17 65"/> <!--input de type telephone avec condition-->
+                <br>
+
+                <input type="submit" value="Je réponds et je m'inscris">
+                <input type="reset" value="Annuler">
+            </fieldset>
+        </form>
+    </body>
+
+</html>

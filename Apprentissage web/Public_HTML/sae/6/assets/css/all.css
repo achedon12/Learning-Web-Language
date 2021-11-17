@@ -1,0 +1,14 @@
+* {
+    color: black;
+    background-color: white;
+}
+.button_next{
+    position: fixed;
+    bottom: 0;
+    margin-left: 87%;
+    margin-bottom: 1%;
+    opacity: 0.1;
+}
+.button_next:hover{
+    opacity: 1;
+}

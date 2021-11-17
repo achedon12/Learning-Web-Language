@@ -1,0 +1,15 @@
+* {
+    background-color:white;
+    color: black;
+    margin-top: 20px;
+}
+.exo1, form, .exo2, .exo3, .exo5{
+    text-align: center;
+}
+fieldset, h2, h3, p, label, .contact, .webmaster, .output {
+    background-color:cornsilk;
+}
+fieldset{
+    width: 50%;
+    margin-left: 25%;
+}

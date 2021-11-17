@@ -1,0 +1,5 @@
+faire un dropdown avec chaque catégorie des grands titres
+dans chaque dropdown => contient les sous parties
+
+footer + grandes parties
+titre = nom de letude
