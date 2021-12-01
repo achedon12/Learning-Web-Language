@@ -1,0 +1,119 @@
+body {
+	width: 100%;
+	background-color:lightgrey;
+	color:black;
+	font-weight:normal;
+}
+
+header, footer { 
+	background-color: grey; 
+	color: white; 
+	padding: 15px; 
+	margin: 0;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+aside { 
+	background-color:darkblue;
+    float: left; 
+    padding: 15px;
+	margin: 0;
+	width: 15%; 
+	box-sizing: border-box;
+}
+section { 
+    float: left; 
+    padding: 15px;
+	margin: 0;
+	width: 85%; 
+	box-sizing: border-box;
+}
+
+article p {
+	font-size: 1.1em;
+	margin: 10px;
+}
+
+article p.excerpt {
+	width: 20%;
+	float: left;
+	font-size: 1.1em;
+	margin: 10px;
+}
+
+article h1 {
+	font-size: 2em;
+}
+
+footer {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+nav {
+	background-color:darkgrey;
+	text-align: center;
+	min-height: 50px;
+}
+nav.menu-horizontal {
+	background-color:lightgrey;
+	text-align: left;
+}
+
+nav>ul {
+}
+
+/* Taille du texte des items de menu */
+nav>ul>li {
+	font-size: 1.5em;
+}
+nav>ul>li li {
+	font-size: 0.8em;
+}
+
+/* Sous menus */
+nav ul ul {
+	display:none; 
+	margin: 0; padding: 0;
+	position: absolute; 
+	left: 0px; 
+	top: 28px;
+}
+nav.menu-horizontal ul ul {
+	left: 120px; 
+	top: 0px; 
+}
+
+/* Sous menu de 2nd niveau */
+nav ul.niveau2 ul {
+	left: 120px; 
+	top: 0px; 
+}
+
+/* Choix de menu */
+nav li {
+	display: inline-block;
+	position: relative; 
+	width: 120px; 
+	background-color: #eee;
+	list-style-type: none; 
+}
+
+/* Lien dans le menu */
+nav li a:hover, nav li a:focus, nav li a:active {
+	background: #666;
+	text-decoration: underline;
+}
+
+/* Mettre en évidence les items survolés */
+nav li:hover {
+	background-color: #555;
+}
+
+/* Afficher les sous menus */
+nav li:hover ul.niveau2, 
+nav li li:hover ul.niveau3 {
+	display: block
+}

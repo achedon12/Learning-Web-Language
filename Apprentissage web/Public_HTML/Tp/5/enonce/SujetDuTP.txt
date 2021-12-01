@@ -1,0 +1,6 @@
+1. Examiner le code HTML
+2. Etudier comment est réalisé le menu à gauche
+3. Ajouter le code HTML pour faire une barre de menu horizontal et modifier des élements de présentation pour montrer que vous avez compris le fonctionnement.
+
+4. Appliquer le même style de menu sur votre page (menu vertical , horizontal ou les deux)
+

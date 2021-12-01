@@ -1,0 +1,20 @@
+li{
+    display: inline-block; 
+    padding-left: 20px; 
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    text-align: center;
+}
+button#return{
+    position: fixed;
+    bottom: 0;
+    margin-left: 87%;
+    margin-bottom: 5%;
+    opacity: 0.1;
+}
+button#return:hover{
+    opacity: 1;
+}

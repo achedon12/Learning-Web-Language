@@ -1,0 +1,13 @@
+
+
+Pour valider le code HTML, vous pouvez aller sur la page 
+https://validator.w3.org/#validate_by_upload
+
+Tester la page tableauV1.html.
+Quels retours donne la validation ? 
+
+Quel est le problème ?
+
+
+ Tester la page tableauV2.html.
+ 

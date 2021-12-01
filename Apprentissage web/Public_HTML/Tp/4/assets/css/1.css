@@ -1,0 +1,45 @@
+body {
+    padding-top: 20px;
+}
+img {
+    float: left;
+}
+p#left {
+    float: right;
+}
+h1 {
+    text-align: center;
+}
+h1#bold {
+    text-align: center;
+    font-weight: bold;
+}
+h2 {
+    padding-left: 100px;
+}
+.lettre {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    width: 35px;
+    text-align: center;
+    font-size: 20px;
+    float: left;
+}
+h2#name {
+    color: rgb(23, 7, 255);
+    padding-left: 30px;
+}
+h2#h2 {
+    color: rgb(23, 7, 255);
+}
+button#return{
+    position: fixed;
+    bottom: 0;
+    margin-left: 87%;
+    margin-bottom: 5%;
+    opacity: 0.1;
+}
+button#return:hover{
+    opacity: 1;
+}
