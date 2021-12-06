@@ -11,6 +11,9 @@ table {
 th, td {
     border: 1px solid black;
 }
+th, td {
+    border: 1px solid black;
+}
 .bold {
     font-weight: bold;
 }
@@ -23,4 +26,7 @@ button#return{
 }
 button#return:hover{
     opacity: 1;
+}
+th:hover, td:hover {
+    background-color: cadetblue;
 }
